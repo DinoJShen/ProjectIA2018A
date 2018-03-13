@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+}
+
+textarea{
+    font-family: 'Saira Condensed', sans-serif;
+    opacity: 0.5;
+    width: 100%;
+    height: 30em;
+}
+
+textarea:focus{
+    outline: none;
+    opacity: 1;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+fieldset{
+    margin: 15px;
+    border:0;
+}
+
+.star{
+    color: red;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin: auto;
+    padding-top: 3em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev.responsive , .next.responsive{
+    top: 160%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+#home{
+    margin-left: 30%;
+}
+
+table{
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.Categories table{
+    margin-top: 3.4em;
+    display: none;
+}
+
+.Categories table tr td{
+    border: 1px solid #E4E0DE;
+    width: 1%;
+    text-align: center;
+    padding: 8.2%;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.Categories table tr td a{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.Categories table tr td:hover{
+    opacity: 1;
+}
+
+.Categories.responsive table{
+    display: block;
+
+}
+
+.title1{
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.shoe2 td{
+    display: none;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+.shoe td a ,.shoe2 td a{
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.shoe td a:hover ,.shoe2 td a:hover{
+    text-decoration: underline;
+}
+
+.shoe2 td img{
+    width: 100%;
+    height: 400px;
+}
+
+.shoe td{
+    width:25%;
+    padding: 25px;
+}
+
+.shoe td img{
+    width: 100%;
+    height: 300px;
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    border: 1px solid #E4E0DE;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 999;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.ad{
+    position: relative;
+}
+
+.top-left a{
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-left a{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.signup{
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 15px;
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.signup a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+}
+
+.footer .social a{
+    border:1px solid white;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 20px 20px 0 20px;
+    opacity: 0.5;
+    color: black;
+}
+
+.footer p{
+    color: white;
+    font-size: 10px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin:20px;
+    opacity: 0.5;
+}
+
+.footer i:hover, .footer a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.form{
+    padding-top: 3em;
+    padding-right: 30%;
+    padding-left:30%;
+    text-align: center;
+}
+
+.form button{
+    float: right;
+    background-color: #FF5500;
+    border: 2px solid #FF5500;
+    padding: 5px 60px;
+    text-align: center;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.contact table tr td{
+    border:1px solid #E4E0DE;
+    width: 50%;
+    padding: 20px;
+}
+
+.contact table tr td a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact table{
+    margin-top: 4%;
+}
+
+.contact a:focus, .contact a:hover{
+    color: red;
+}
+
+.form button:hover{
+    background-color: white;
+    color: black;
+}
+
+.men,.women,.boys,.girls{
+    margin-top: 5%;
+    text-align: center;
+}
+
+input[type=Email]{
+    width: 13em;
+}
+
+input[type=Date]{
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+input[type=Date], input[type=Email]{
+    font-family: 'Saira Condensed', sans-serif;
+    border: 1px solid #E4E0DE;
+}
+
+input[type=Date]:focus, input[type=Email]:focus{
+    border-color: black;
+    outline: none;
+}
+
+input[type=text] {
+    float: right;
+    width: 10%;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    border: 1px solid #E4E0DE;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 13%;
+    border: 1px solid black;
+    outline: none;
+}
+
+@media screen and (max-width: 750px){
+    #home{
+        margin: 0;
+    }
+    ul.topnav li {
+        float: none;
+    }
+    ul.topnav li a:hover{
+        border:none;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    input[type=text]{
+        box-sizing: border-box;
+        width: 5%;
+        border: none;
+        margin: 0;
+    }
+    input[type=text]:hover{
+        cursor: pointer;
+    }
+    input[type=text]:focus{
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+    .logo{
+        display: none;
+    }
+    .slideshow-container{
+        padding-top: 10em;
+    }
+    .shoe2 td{
+        display: block;
+    }
+    .shoe{
+        display: none;
+    }
+    .title1{
+        padding-left: 4%;
+    }
+    .Categories.responsive table{
+        margin-top: 9.7em;
+    }
+}
